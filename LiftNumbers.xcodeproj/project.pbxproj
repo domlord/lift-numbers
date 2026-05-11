@@ -17,6 +17,9 @@
 		CE4C21B02FAA74D500D49B0E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE4C21AF2FAA74D500D49B0E /* FirebaseAuth */; };
 		CE4C21B22FAA74D500D49B0E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE4C21B12FAA74D500D49B0E /* FirebaseFirestore */; };
 		CE4C21B42FACD53700D49B0E /* GoogleService-Info.plist.template in Resources */ = {isa = PBXBuildFile; fileRef = CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */; };
+		CE4C21BD2FB1591A00D49B0E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21BC2FB1591A00D49B0E /* LoginView.swift */; };
+		CE4C21BF2FB1592F00D49B0E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */; };
+		CE4C21C12FB15A6700D49B0E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		CE4C219F2FAA6D2300D49B0E /* LiftNumbersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftNumbersUITests.swift; sourceTree = "<group>"; };
 		CE4C21A12FAA6D2300D49B0E /* LiftNumbersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftNumbersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GoogleService-Info.plist.template"; sourceTree = "<group>"; };
+		CE4C21BC2FB1591A00D49B0E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,10 @@
 		CE4C21832FAA6D1D00D49B0E /* LiftNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				CE4C21842FAA6D1D00D49B0E /* LiftNumbersApp.swift */,
-				CE4C21862FAA6D1D00D49B0E /* ContentView.swift */,
+				CE4C21BB2FB157E800D49B0E /* Models */,
+				CE4C21BA2FB157DC00D49B0E /* ViewModels */,
+				CE4C21B62FB156E000D49B0E /* Views */,
+				CE4C21B52FB156C300D49B0E /* App */,
 				CE4C21882FAA6D2300D49B0E /* Assets.xcassets */,
 				CE4C218A2FAA6D2300D49B0E /* Preview Content */,
 			);
@@ -132,6 +140,55 @@
 				CE4C21A12FAA6D2300D49B0E /* LiftNumbersUITestsLaunchTests.swift */,
 			);
 			path = LiftNumbersUITests;
+			sourceTree = "<group>";
+		};
+		CE4C21B52FB156C300D49B0E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C21862FAA6D1D00D49B0E /* ContentView.swift */,
+				CE4C21842FAA6D1D00D49B0E /* LiftNumbersApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE4C21B62FB156E000D49B0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C21B92FB157B900D49B0E /* Workout */,
+				CE4C21B82FB157AD00D49B0E /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE4C21B82FB157AD00D49B0E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C21BC2FB1591A00D49B0E /* LoginView.swift */,
+				CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CE4C21B92FB157B900D49B0E /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		CE4C21BA2FB157DC00D49B0E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE4C21BB2FB157E800D49B0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C21C12FB15A6700D49B0E /* AuthViewModel.swift in Sources */,
+				CE4C21BF2FB1592F00D49B0E /* SignUpView.swift in Sources */,
+				CE4C21BD2FB1591A00D49B0E /* LoginView.swift in Sources */,
 				CE4C21872FAA6D1D00D49B0E /* ContentView.swift in Sources */,
 				CE4C21852FAA6D1D00D49B0E /* LiftNumbersApp.swift in Sources */,
 			);
