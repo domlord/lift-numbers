@@ -16,10 +16,48 @@ struct SignUpView : View {
     @State private var confirmPassword = ""
     
     var body : some View {
-        VStack(spacing: 20){
+        VStack(spacing: 20) {
             
-            Text
+            
+            Text("Create account")
+                .font(.largeTitle)
+                .bold()
+            
+            TextField("Email", text : $email)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .autocapitalization(.none)
+                .keyboardType(.emailAddress)
+            
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            SecureField("Confirm Password", text: $confirmPassword)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            if password != confirmPassword && !confirmPassword.isEmpty {
+                Text("Passwords do not match")
+                    .foregroundColor(.red)
+                    .font(.caption)
+            }
+            
+            if !authViewModel.errorMessage.isEmpty {
+                Text(authViewModel.errorMessage)
+                    .foregroundColor(.red)
+                    .font(.caption)
+            }
+            
+            if authViewModel.isLoading {
+                ProgressView()
+            } else {
+                Button("Sign up") {
+                    Task {
+                        await authViewModel.signUp(email: email, password: password)
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .disabled(password != confirmPassword || email.isEmpty || password.isEmpty)
+            }
         }
+        .padding()
     }
-    
 }
