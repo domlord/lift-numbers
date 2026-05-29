@@ -9,5 +9,5 @@
 import SwiftUI
 
 struct LogWorkoutView : View {
-    var body: 
+    var body: //test
 }
