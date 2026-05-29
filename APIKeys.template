@@ -1,0 +1,3 @@
+enum APIKeys {
+	static let googlePlaces = "YOUR_GOOGLE_PLACES_API_KEY_HERE"
+}
