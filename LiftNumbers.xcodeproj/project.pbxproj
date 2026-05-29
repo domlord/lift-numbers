@@ -20,6 +20,7 @@
 		CE4C21BD2FB1591A00D49B0E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21BC2FB1591A00D49B0E /* LoginView.swift */; };
 		CE4C21BF2FB1592F00D49B0E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */; };
 		CE4C21C12FB15A6700D49B0E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */; };
+		CE4C21C32FC9146B00D49B0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE4C21C22FC9146A00D49B0E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CE4C21BC2FB1591A00D49B0E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CE4C21C22FC9146A00D49B0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		CE4C21782FAA6D1D00D49B0E = {
 			isa = PBXGroup;
 			children = (
+				CE4C21C22FC9146A00D49B0E /* GoogleService-Info.plist */,
 				CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */,
 				CE4C21832FAA6D1D00D49B0E /* LiftNumbers */,
 				CE4C21942FAA6D2300D49B0E /* LiftNumbersTests */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4C21B42FACD53700D49B0E /* GoogleService-Info.plist.template in Resources */,
+				CE4C21C32FC9146B00D49B0E /* GoogleService-Info.plist in Resources */,
 				CE4C218C2FAA6D2300D49B0E /* Preview Assets.xcassets in Resources */,
 				CE4C21892FAA6D2300D49B0E /* Assets.xcassets in Resources */,
 			);

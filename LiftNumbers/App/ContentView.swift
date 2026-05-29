@@ -13,9 +13,10 @@ struct ContentView: View {
     var body: some View {
         if authViewModel.isLoggedIn {
             Text("Main App")
-        }
-        else {
-            LoginView()
+        } else {
+            NavigationStack {
+                LoginView()
+            }
         }
     }
 }
