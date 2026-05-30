@@ -60,5 +60,5 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-GoogleService-Info.plist
+LiftNumbers/Config/GoogleService-Info.plist
 LiftNumbers/Config/APIKeys.swift
