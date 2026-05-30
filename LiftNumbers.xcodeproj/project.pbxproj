@@ -59,7 +59,7 @@
 		CE4C219B2FAA6D2300D49B0E /* LiftNumbersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftNumbersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4C219F2FAA6D2300D49B0E /* LiftNumbersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftNumbersUITests.swift; sourceTree = "<group>"; };
 		CE4C21A12FAA6D2300D49B0E /* LiftNumbersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftNumbersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GoogleService-Info.plist.template"; sourceTree = "<group>"; };
+		CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "GoogleService-Info.plist.template"; sourceTree = "<group>"; };
 		CE4C21BC2FB1591A00D49B0E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE4C21BE2FB1592E00D49B0E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
@@ -104,9 +104,6 @@
 		CE4C21782FAA6D1D00D49B0E = {
 			isa = PBXGroup;
 			children = (
-				CE4C21D62FCA0F2C00D49B0E /* APIKeys.template */,
-				CE4C21C22FC9146A00D49B0E /* GoogleService-Info.plist */,
-				CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */,
 				CE4C21832FAA6D1D00D49B0E /* LiftNumbers */,
 				CE4C21942FAA6D2300D49B0E /* LiftNumbersTests */,
 				CE4C219E2FAA6D2300D49B0E /* LiftNumbersUITests */,
@@ -253,6 +250,9 @@
 		CE4C21D82FCA0F5C00D49B0E /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				CE4C21C22FC9146A00D49B0E /* GoogleService-Info.plist */,
+				CE4C21B32FACD53600D49B0E /* GoogleService-Info.plist.template */,
+				CE4C21D62FCA0F2C00D49B0E /* APIKeys.template */,
 				CE4C21D42FCA0E7100D49B0E /* APIKeys.swift */,
 			);
 			path = Config;
