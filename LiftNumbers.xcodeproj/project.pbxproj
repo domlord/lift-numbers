@@ -38,6 +38,7 @@
 		CECB6E3B2FCB922C0070A8D1 /* LoggedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3A2FCB922C0070A8D1 /* LoggedExercise.swift */; };
 		CECB6E3D2FCB92630070A8D1 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3C2FCB92630070A8D1 /* WorkoutSession.swift */; };
 		CECB6E3F2FCB926C0070A8D1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */; };
+		CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		CECB6E3A2FCB922C0070A8D1 /* LoggedExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedExercise.swift; sourceTree = "<group>"; };
 		CECB6E3C2FCB92630070A8D1 /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
 		CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExercises.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		CE4C21832FAA6D1D00D49B0E /* LiftNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				CECB6E402FCCCE530070A8D1 /* Data */,
 				CE4C21D82FCA0F5C00D49B0E /* Config */,
 				CE4C21BB2FB157E800D49B0E /* Models */,
 				CE4C21BA2FB157DC00D49B0E /* ViewModels */,
@@ -283,6 +286,14 @@
 				CE4C21D42FCA0E7100D49B0E /* APIKeys.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		CECB6E402FCCCE530070A8D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +455,7 @@
 				CECB6E312FCB91B30070A8D1 /* MuscleGroup.swift in Sources */,
 				CE4C21C62FCA021500D49B0E /* MainTabView.swift in Sources */,
 				CE4C21D32FCA042700D49B0E /* ProfileView.swift in Sources */,
+				CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */,
 				CECB6E352FCB91D50070A8D1 /* Brand.swift in Sources */,
 				CE4C21CC2FCA030900D49B0E /* ProgressView.swift in Sources */,
 			);
