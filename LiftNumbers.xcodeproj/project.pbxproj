@@ -39,6 +39,7 @@
 		CECB6E3D2FCB92630070A8D1 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3C2FCB92630070A8D1 /* WorkoutSession.swift */; };
 		CECB6E3F2FCB926C0070A8D1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */; };
 		CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */; };
+		CECB6E452FCCD2DE0070A8D1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		CECB6E3C2FCB92630070A8D1 /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
 		CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExercises.swift; sourceTree = "<group>"; };
+		CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		CE4C21832FAA6D1D00D49B0E /* LiftNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				CECB6E432FCCD2CE0070A8D1 /* Services */,
 				CECB6E402FCCCE530070A8D1 /* Data */,
 				CE4C21D82FCA0F5C00D49B0E /* Config */,
 				CE4C21BB2FB157E800D49B0E /* Models */,
@@ -296,6 +299,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		CECB6E432FCCD2CE0070A8D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +451,7 @@
 				CE4C21C82FCA02E200D49B0E /* LogWorkoutView.swift in Sources */,
 				CECB6E372FCB91DD0070A8D1 /* Gym.swift in Sources */,
 				CE4C21CA2FCA02F800D49B0E /* HistoryView.swift in Sources */,
+				CECB6E452FCCD2DE0070A8D1 /* FirestoreService.swift in Sources */,
 				CE4C21C12FB15A6700D49B0E /* AuthViewModel.swift in Sources */,
 				CE4C21BF2FB1592F00D49B0E /* SignUpView.swift in Sources */,
 				CE4C21BD2FB1591A00D49B0E /* LoginView.swift in Sources */,
