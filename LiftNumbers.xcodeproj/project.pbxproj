@@ -40,6 +40,7 @@
 		CECB6E3F2FCB926C0070A8D1 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */; };
 		CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */; };
 		CECB6E452FCCD2DE0070A8D1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */; };
+		CECB6E472FCE2A6F0070A8D1 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		CECB6E3E2FCB926C0070A8D1 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExercises.swift; sourceTree = "<group>"; };
 		CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */,
+				CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				CE4C21C62FCA021500D49B0E /* MainTabView.swift in Sources */,
 				CE4C21D32FCA042700D49B0E /* ProfileView.swift in Sources */,
 				CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */,
+				CECB6E472FCE2A6F0070A8D1 /* WorkoutViewModel.swift in Sources */,
 				CECB6E352FCB91D50070A8D1 /* Brand.swift in Sources */,
 				CE4C21CC2FCA030900D49B0E /* ProgressView.swift in Sources */,
 			);
