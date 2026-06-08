@@ -41,6 +41,7 @@
 		CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */; };
 		CECB6E452FCCD2DE0070A8D1 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */; };
 		CECB6E472FCE2A6F0070A8D1 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */; };
+		CECB6E492FD757800070A8D1 /* GymViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E482FD757800070A8D1 /* GymViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		CECB6E412FCCD13B0070A8D1 /* DefaultExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultExercises.swift; sourceTree = "<group>"; };
 		CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		CECB6E482FD757800070A8D1 /* GymViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,7 @@
 			children = (
 				CE4C21C02FB15A6700D49B0E /* AuthViewModel.swift */,
 				CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */,
+				CECB6E482FD757800070A8D1 /* GymViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				CECB6E422FCCD13B0070A8D1 /* DefaultExercises.swift in Sources */,
 				CECB6E472FCE2A6F0070A8D1 /* WorkoutViewModel.swift in Sources */,
 				CECB6E352FCB91D50070A8D1 /* Brand.swift in Sources */,
+				CECB6E492FD757800070A8D1 /* GymViewModel.swift in Sources */,
 				CE4C21CC2FCA030900D49B0E /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
