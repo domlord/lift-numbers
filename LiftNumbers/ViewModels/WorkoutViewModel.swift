@@ -99,6 +99,31 @@ class WorkoutViewModel: ObservableObject {
     
     func removeSet(from exerciseId: String, setId: String) {
         guard let exerciseIndex = currentSession?.exercises.firstIndex(where: { $0.id == exerciseId}) else {return}
+        currentSession?.exercises[exerciseIndex].sets.removeAll { $0.id == setId}
+    }
+    
+    func updateSet(in exerciseId: String, setId: String, weight: Double, reps: Int) {
+        guard let exerciseIndex = currentSession?.exercises.firstIndex(where: { $0.id == exerciseId}),
+              let setIndex = currentSession?.exercises[exerciseIndex].sets.firstIndex(where: { $0.id == setId})
+        else {return}
+        
+        currentSession?.exercises[exerciseIndex].sets[setIndex].weight = weight
+        currentSession?.exercises[exerciseIndex].sets[setIndex].reps = reps
+    }
+    
+    // history
+    
+    func fetchSessions() async {
+        guard let userId = Auth.auth().currentUser?.uid else { return}
+        isLoading = true
+        
+        do {
+            sessions = try await firestoreService.fetchWorkoutSessions(userId: userId)
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+        
+        isLoading = false
     }
     
 }
