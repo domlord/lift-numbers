@@ -22,13 +22,13 @@ struct MainTabView : View {
                     Label("History", systemImage: "clock")
                     
                 }
-            ProgressView()
+            ProgressChartView()
                 .tabItem {
                     Label("Progress", systemImage: "chart.line.uptrend.xyaxis") //icons from apple's build in icon library sf symbols
                 }
             ProfileView()
                 .tabItem {
-                    Label("Progile", systemImage: "person")
+                    Label("Profile", systemImage: "person")
                 }
         }
     }

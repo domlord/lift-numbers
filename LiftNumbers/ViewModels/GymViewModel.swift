@@ -42,12 +42,12 @@ class GymViewModel : ObservableObject {
     
     // create gym
     
-    func createGym(name: String, address: String, lattitude: Double) async {
+    func createGym(name: String, address: String, lattitude: Double, longitude: Double) async {
         guard let userId = Auth.auth().currentUser?.uid else { return }
         isLoading = true
         
         let gym = Gym(
-            id: UUID.uuidString,
+            id: UUID().uuidString,
             name: name,
             address: address,
             latitude: lattitude,
@@ -75,7 +75,7 @@ class GymViewModel : ObservableObject {
     }
     
     func allExercises(for muscleGroup: MuscleGroup) -> [Machine] {
-        let gymEquipment = equipment(for: <#T##MuscleGroup#>).map { equipment in
+        let gymEquipment = equipment(for: muscleGroup).map { equipment in
             Machine(
                 id: equipment.machineId,
                 name: equipment.machineName,

@@ -18,7 +18,7 @@ class AuthViewModel: ObservableObject {
         return user != nil
     }
 
-    func signUp(email: String, password: String) async {
+    func signUp(email: String, password: String, unit: WeightUnit) async {
         isLoading = true
         errorMessage = ""
 
