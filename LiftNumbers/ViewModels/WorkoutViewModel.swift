@@ -64,7 +64,7 @@ class WorkoutViewModel: ObservableObject {
         guard currentSession != nil else { return }
         
         let exercise = LoggedExercise(
-            id: UIID().uuidString,
+            id: UUID().uuidString,
             machineName: machine.name,
             brandName: machine.brandName,
             muscleGroup: machine.muscleGroup,

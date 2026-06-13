@@ -68,6 +68,6 @@ class UserViewModel: ObservableObject {
     // helpers
     
     var defaultUnit: WeightUnit {
-        return profile?.defaultUnit?? .kg
+        return profile?.defaultUnit ?? .kg
     }
 }

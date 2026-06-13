@@ -6,3 +6,9 @@
 //
 
 import SwiftUI
+
+struct ProgressChartView: View {
+    var body : some View {
+        Text("Progress")
+    }
+}
