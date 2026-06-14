@@ -44,6 +44,8 @@
 		CECB6E492FD757800070A8D1 /* GymViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E482FD757800070A8D1 /* GymViewModel.swift */; };
 		CECB6E4B2FDB551D0070A8D1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E4A2FDB551D0070A8D1 /* UserViewModel.swift */; };
 		CECB6E4E2FDB7A170070A8D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CECB6E4D2FDB7A170070A8D1 /* FirebaseFirestoreSwift */; };
+		CECB6E512FDE23090070A8D1 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = CECB6E502FDE23090070A8D1 /* GooglePlaces */; };
+		CECB6E532FDE25450070A8D1 /* GymSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB6E522FDE25450070A8D1 /* GymSearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,7 @@
 		CECB6E462FCE2A6E0070A8D1 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		CECB6E482FD757800070A8D1 /* GymViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewModel.swift; sourceTree = "<group>"; };
 		CECB6E4A2FDB551D0070A8D1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		CECB6E522FDE25450070A8D1 /* GymSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4C21B02FAA74D500D49B0E /* FirebaseAuth in Frameworks */,
+				CECB6E512FDE23090070A8D1 /* GooglePlaces in Frameworks */,
 				CE4C21B22FAA74D500D49B0E /* FirebaseFirestore in Frameworks */,
 				CECB6E4E2FDB7A170070A8D1 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -315,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				CECB6E442FCCD2DE0070A8D1 /* FirestoreService.swift */,
+				CECB6E522FDE25450070A8D1 /* GymSearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				CE4C21AF2FAA74D500D49B0E /* FirebaseAuth */,
 				CE4C21B12FAA74D500D49B0E /* FirebaseFirestore */,
 				CECB6E4D2FDB7A170070A8D1 /* FirebaseFirestoreSwift */,
+				CECB6E502FDE23090070A8D1 /* GooglePlaces */,
 			);
 			productName = LiftNumbers;
 			productReference = CE4C21812FAA6D1D00D49B0E /* LiftNumbers.app */;
@@ -421,6 +427,7 @@
 			mainGroup = CE4C21782FAA6D1D00D49B0E;
 			packageReferences = (
 				CE4C21AE2FAA74D500D49B0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CECB6E4F2FDE23090070A8D1 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
 			);
 			productRefGroup = CE4C21822FAA6D1D00D49B0E /* Products */;
 			projectDirPath = "";
@@ -491,6 +498,7 @@
 				CECB6E472FCE2A6F0070A8D1 /* WorkoutViewModel.swift in Sources */,
 				CECB6E352FCB91D50070A8D1 /* Brand.swift in Sources */,
 				CECB6E492FD757800070A8D1 /* GymViewModel.swift in Sources */,
+				CECB6E532FDE25450070A8D1 /* GymSearchService.swift in Sources */,
 				CECB6E4B2FDB551D0070A8D1 /* UserViewModel.swift in Sources */,
 				CE4C21CC2FCA030900D49B0E /* ProgressView.swift in Sources */,
 			);
@@ -827,6 +835,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		CECB6E4F2FDE23090070A8D1 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -844,6 +860,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE4C21AE2FAA74D500D49B0E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		CECB6E502FDE23090070A8D1 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECB6E4F2FDE23090070A8D1 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

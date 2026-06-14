@@ -13,6 +13,7 @@ import CoreLocation
 class GymViewModel : ObservableObject {
     // published properties
     
+    @Published var predictions: [PlacePrediction] = []
     @Published var searchResults: [Gym] = []
     @Published var nearbyGyms: [Gym] = []
     @Published var selectedGym: Gym? = nil
@@ -23,6 +24,17 @@ class GymViewModel : ObservableObject {
     private let firestoreService = FirestoreService.shared
     
     // search
+    
+    func searchPlaces(query: String) async {
+        guard !query.isEmpty else {
+            predictions = []
+            return
+        }
+    }
+    
+    do {
+        []
+    }
     
     func searchGyms() async {
         guard !searchQuery.isEmpty else {
